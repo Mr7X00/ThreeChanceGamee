@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Chance Game</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container min-vh-100 d-flex justify-content-center align-items-center py-4">
+
+        <div class="game-card card shadow-lg border-0 p-4">
+
+            <div class="text-center">
+                <h1 class="fw-bold">Three Chance Game</h1>
+                <p class="text-secondary">
+                    Guess a number between 1 and 10
+                </p>
+            </div>
+
+            <div class="alert alert-primary text-center">
+                Chances Left:
+                <strong id="chances">3</strong>
+            </div>
+
+            <label for="guess" class="form-label fw-semibold">
+                Enter Your Number
+            </label>
+
+            <input
+                type="number"
+                id="guess"
+                class="form-control form-control-lg mb-3"
+                placeholder="Enter number (1-10)"
+                min="1"
+                max="10">
+
+            <button id="checkBtn" class="btn btn-primary btn-lg w-100">
+                Check Number
+            </button>
+
+            <button id="restartBtn" class="btn btn-outline-success w-100 mt-2">
+                Restart Game
+            </button>
+
+            <div id="message" class="result mt-4 text-center" aria-live="polite">
+                Start guessing!
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

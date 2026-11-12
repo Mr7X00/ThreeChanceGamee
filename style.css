@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.game-card {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 20px;
+}
+
+.game-card h1 {
+    color: #1e3a8a;
+    font-size: clamp(24px, 5vw, 32px);
+}
+
+#guess {
+    text-align: center;
+}
+
+.result {
+    font-size: 17px;
+    font-weight: 600;
+    min-height: 28px;
+}
+
+button {
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    transform: none;
+}
